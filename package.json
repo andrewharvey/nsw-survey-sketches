@@ -1,0 +1,10 @@
+{
+  "name": "nsw-survey-sketches",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "p-limit": "^5.0.0"
+  }
+}
