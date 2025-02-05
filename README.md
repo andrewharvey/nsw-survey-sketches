@@ -11,25 +11,27 @@ Scripts to download all NSW Survey Sketches and convert them to geotagged JPEG f
 
 1. Fetch source data as GeoJSON
 
-    make data/SurveyMarkGDA2020.geojson
+        make data/SurveyMarkGDA2020.geojson
 
-2. Convert to CSV with a BBOX
+2. Convert to CSV
 
-  env BBOX="xmin ymin xmax ymax" make data/SurveyMark.csv
+   with a BBOX
 
-...or without a BBOX
+        env BBOX="xmin ymin xmax ymax" make data/SurveyMark.csv
 
-  make data/SurveyMark.csv
+    without a BBOX
 
-3. Fetch sketch plans
+        make data/SurveyMark.csv
 
-  make data/plans
-  make renamePlans
+4. Fetch sketch plans
 
-4. Extract images from the PDFs
+        make data/plans
+        make renamePlans
 
-    make data/images
+5. Extract images from the PDFs
 
-5. Geotag JPGs
+        make data/images
 
-    make geotag
+6. Geotag JPGs
+
+        make geotag
